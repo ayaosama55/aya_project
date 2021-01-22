@@ -55,6 +55,9 @@ body {
     text-align: right;
     z-index: 4000;
 }
+.menu .logo {
+    margin-top: 5px;
+}
 .menu ul {
     width: 100%;
 }
@@ -87,6 +90,7 @@ body {
     visibility:hidden;
     transform: scaleY(0);
     transform-origin: top center;
+    z-index: 2000;
 }
 .myfourli:hover .mylist {
     opacity:1;
@@ -101,7 +105,7 @@ body {
     margin-left: 30px;
 }
 .menu .icon { /* our icon bar */
-    font-size: 43px;
+    font-size: 35px;
     color: #F15F22;
     padding: 10px 0px;
     display: none;
@@ -143,7 +147,6 @@ body {
 }
 .menu-links .container {
     position: relative;
-    padding: 50px
 }
 .menu-links .container >i {
     position: absolute;
@@ -234,14 +237,14 @@ header .container p {
         margin-top: 18px;
     }
     header .container button {
-        width: 130px;
-        padding: 10px;
-        font-size: 18px;
+        width: 100px;
+        padding: 10px 5px;
+        font-size: 16px;
         margin: 11px 0;
     }
     header .container input {
         padding: 10px;
-        font-size: 18px;
+        font-size: 16px;
         margin: 11px 0;
     }
     header .container p {
@@ -288,7 +291,63 @@ header .container p {
         margin: 20px 0;
     }
 }
-
+/*********************************/
+/* start contact */
+.contact {
+    padding: 30px 0;
+    background:#F9F9F9;
+}
+.contact .container {
+    display: flex;
+}
+.contact .container .contact-box {
+    width: calc(100%/3);
+    display: flex;
+    position: relative;
+}
+.contact .container .contact-box i {
+    font-size: 35px;
+    color: #F15F22;
+    margin-top: 10px;
+}
+.contact .container .contact-box div {
+    padding-left: 20px;
+}
+.contact .container .contact-box p {
+    color: #4b4a4a;
+    margin-bottom: 10px;
+}
+.contact .container .contact-box span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2C234D;
+}
+@media (max-width: 575px) {
+    .contact .container .contact-box {
+        width: 100% !important;
+        margin-bottom:30px;
+        margin-left: 10px;
+    }
+    .contact-box i {
+        font-size: 30px !important;
+    }
+    .contact-box div span {
+        font-size: 18px !important;
+    }
+}
+@media (max-width : 992px) {
+    .contact .container {
+        flex-wrap: wrap;
+    }
+    .contact .container .contact-box:not(:last-of-type) {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .contact .contact-box:last-of-type {
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+}
 /* globa media */
 @media (max-width: 575px) {
 
