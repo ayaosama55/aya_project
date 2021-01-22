@@ -107,11 +107,16 @@ body {
 .menu .icon { /* our icon bar */
     font-size: 35px;
     color: #F15F22;
+    cursor: pointer;
+}
+.menu .bar-icon {
     padding: 10px 0px;
     display: none;
     text-align: right;
     width: 100%;
-    cursor: pointer;
+}
+.menu .logo img {
+    height: 35px;
 }
 /* start nav bar media */
 @media (max-width: 992px) {
@@ -122,7 +127,7 @@ body {
     {
         display: none !important;
     }
-    .icon {
+    .bar-icon {
         display: block !important;
     }
     .navbar .menu {
@@ -237,15 +242,16 @@ header .container p {
         margin-top: 18px;
     }
     header .container button {
-        width: 100px;
-        padding: 10px 5px;
-        font-size: 16px;
-        margin: 11px 0;
+        width: 80%;
+        padding: 10px 10px;
+        font-size: 17px;
+        margin: 10px 0;
     }
     header .container input {
         padding: 10px;
-        font-size: 16px;
-        margin: 11px 0;
+        font-size: 17px;
+        margin: 7px 0;
+        width: 80%;
     }
     header .container p {
         margin-top: 21px;
