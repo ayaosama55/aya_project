@@ -19,11 +19,13 @@ document.querySelector(".icon").addEventListener("click", function () {
 });
 
 window.onscroll = function () {
+    if (window.scrollY >= 60 ) {
     document.querySelector(".nav1").style.display = "none";
     document.querySelector(".line").style.display = "none";
     document.querySelector(".nav2").style.position = "fixed";
     document.querySelector(".nav2").style.width = "100%";
-    if(window.scrollY === 0) {
+    }
+    if(window.scrollY < 60 ) {
         document.querySelector(".nav1").style.display = "block";
         document.querySelector(".line").style.display = "block";
         document.querySelector(".nav2").style.position = "relative";
