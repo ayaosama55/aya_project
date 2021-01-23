@@ -31,4 +31,16 @@ window.onscroll = function () {
         document.querySelector(".nav2").style.position = "relative";
         document.querySelector(".nav2").style.width = "100%";
     }
+    if (window.scrollY > 500) {
+        document.querySelector(".to-top").style.display = "block";
+    } else {
+        document.querySelector(".to-top").style.display = "none";
+    }
 }
+let toTopButton = document.querySelector(".to-top");
+toTopButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".top-page").scrollIntoView({
+        behavior: "smooth"
+    });
+});

@@ -13,6 +13,24 @@ body {
     margin: 0 auto;
     padding: 15px;
 }
+/* start to top button */
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: #F15F22;
+    border-radius: 50%;
+    line-height: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    z-index: 6;
+    cursor: pointer;
+    display: none;
+}
 /* start navbar */
 .navbar {
     background-color: #000c20;
@@ -53,7 +71,7 @@ body {
     display: flex;
     padding: 3px 0;
     text-align: right;
-    z-index: 4000;
+    z-index: 4;
 }
 .menu .logo {
     margin-top: 5px;
@@ -90,7 +108,7 @@ body {
     visibility:hidden;
     transform: scaleY(0);
     transform-origin: top center;
-    z-index: 2000;
+    z-index: 2;
 }
 .myfourli:hover .mylist {
     opacity:1;
@@ -145,7 +163,7 @@ body {
     height: 100vh;
     width: 100%;
     transition: .5s all ease-in-out;
-    z-index: 4000;
+    z-index: 4;
     background-color: rgba(0,0,0,0.9);
     color: #fff;
     padding: 40px 0;
@@ -192,7 +210,7 @@ header {
     background-size: cover;
     width: 100%;
     position: relative;
-    z-index: 1000;
+    z-index: 1;
 }
 header .container h2 {
     color: #fff;
@@ -354,6 +372,105 @@ header .container p {
         margin-bottom: 0 !important;
     }
 }
+/*******************************/
+/* start services */
+.service {
+    padding: 50px 0;
+    text-align: center;
+}
+.service .ser-sec {
+    display: flex;
+}
+.service .container span {
+    color: #F15F22;
+    font-size: 19px;
+}
+.service .container h2 {
+    font-size: 40px;
+    color: #2C234D;
+    font-weight: bold;
+    margin: 10px 0 43px;
+}
+.service .container .ser-sec .service-box {
+    margin-right: 2%;
+    width: calc(96%/3);
+    padding: 80px 20px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #f1ecec;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.2);
+}
+.service .container .ser-sec .service-box:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #ff5f13;
+    transition: .6s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+}
+.service .container .ser-sec .service-box:last-of-type {
+    margin-right: 0;
+}
+.service .container .service-box i {
+    color: #F15F22;
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+.service .container .service-box h3 {
+    color: #2C234D;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.service .container .service-box p {
+    color: #575757;
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+.service .container .ser-sec .service-box:hover:before {
+    height: 100%;
+}
+.service .container .ser-sec .service-box:hover .content i,
+.service .container .ser-sec .service-box:hover .content h3,
+.service .container .ser-sec .service-box:hover .content p
+{
+    color: #fff;
+}
+@media (max-width: 575px) {
+    .service .container .ser-sec .service-box {
+        width: 80% !important;
+        margin: 15px auto !important; 
+    }
+    .service .container h2 {
+        font-size: 25px;
+    }
+    .service .container .ser-sec .service-box {
+        padding: 30px 10px !important;
+    }
+    .service .container .ser-sec .service-box .content h3{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .service .container .ser-sec {
+        flex-wrap: wrap;
+    }
+    .service .container .ser-sec .service-box {
+        width: calc(98%/2) ;
+        margin-right: 0 ;
+    }
+    .service .container .ser-sec .service-box:first-of-type {
+        margin-right: 2%;
+    }
+    .service .container .ser-sec .service-box .content h3 {
+        font-size: 25px;
+    }
+} 
 /* globa media */
 @media (max-width: 575px) {
 
@@ -400,5 +517,5 @@ header .container p {
     background-color: #cc511c;
 }
 .nav2 {
-    z-index: 3000;
+    z-index: 3;
 }
