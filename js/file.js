@@ -1,21 +1,34 @@
+document.querySelector(".mylist-menu").style.display = "none";
 document.querySelector(".plus-icon").addEventListener("click", function () {
     if (this.dataset.list === "open") {
-        document.querySelector(".mylist-menu").style.display = "none";
-        this.dataset.list = "close";
-        this.classList.remove("fa-times");
-        this.classList.add("fa-plus");
-    } else if (this.dataset.list === "close") {
         document.querySelector(".mylist-menu").style.display = "block";
-        this.dataset.list = "open";
+        this.dataset.list = "close";
         this.classList.remove("fa-plus");
         this.classList.add("fa-times");
+    } else if (this.dataset.list === "close") {
+        document.querySelector(".mylist-menu").style.display = "none";
+        this.dataset.list = "open";
+        this.classList.remove("fa-times");
+        this.classList.add("fa-plus");
     }
 });
+/*
 document.querySelector(".close-icon").addEventListener("click", function () {
     document.querySelector(".menu-links").style.top = "-100%";
 });
+*/
 document.querySelector(".icon").addEventListener("click", function () {
-    document.querySelector(".menu-links").style.top = "0";
+    if (this.dataset.bar === "close") {
+        document.querySelector(".menu-links").style.opacity = "0";
+        this.classList.remove("fa-times");
+        this.classList.add("fa-bars");
+        this.dataset.bar = "open";
+    } else if (this.dataset.bar === "open"){
+        document.querySelector(".menu-links").style.opacity = "1";
+        this.classList.remove("fa-bars");
+        this.classList.add("fa-times");
+        this.dataset.bar = "close";
+    }
 });
 
 window.onscroll = function () {

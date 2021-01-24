@@ -16,6 +16,7 @@
     <div class="to-top" data-section=".service">
         <i class="fas fa-level-up-alt"></i>
     </div>
+    <!-- 
     <div class="menu-links">
         <div class="container">
             <i class="fa fa-times close-icon"></i>
@@ -34,9 +35,10 @@
             </ul>
         </div>
     </div>
+-->
     <nav class="navbar nav1">
         <div class="container inf">
-            <section class="info">
+            <section class="info flex">
                 <span>Phone: +99 (0) 101 0000 888</span>
                 <span>Email: noreply@yourdomain.com
                 </span>
@@ -51,8 +53,8 @@
     </nav>
         <div class="line"></div>
     <nav class="navbar nav2">
-        <div class="container mn">
-            <section class="menu">
+        <div class="container">
+            <section class="menu flex">
                 <div class="logo">
                     <a href="#"><img src="images/logo.png" /></a>
                 </div>
@@ -70,7 +72,24 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <button class="mybutton">Get a Qoue</button>
-                <div class="bar-icon"><i class="fa fa-bars icon"></i></div>
+                <div class="bar-icon">
+                    <i class="fa fa-bars icon" data-bar="open"></i>
+                    <div class="menu-links">
+                        <ul class="classic-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a> <i class="fa fa-plus plus-icon" data-list="open"></i>
+                                <ul class="classic-list mylist-menu">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                    <li><a href="#">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
     </nav>
@@ -85,7 +104,7 @@
         </div>
     </header>
     <div class="contact">
-        <div class="container">
+        <div class="container flex">
             <section class="contact-box">
                 <i class="fas fa-user-secret"></i>
                 <div>
@@ -111,9 +130,9 @@
     </div>
     <article class="service">
         <div class="container">
-            <span>Our Services</span>
-            <h2>What We Can Do For You</h2>
-            <div class="ser-sec">
+            <span class="our-span">Our Services</span>
+            <h2 class="ourh2">What We Can Do For You</h2>
+            <div class="flex ser-sec">
                 <div class="service-box">
                     <div class="content">
                         <i class="fas fa-shuttle-van"></i>
@@ -135,6 +154,59 @@
                         <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </article>
+    <!-- start about us article -->
+    <article class="about">
+        <div class="container flex">
+            <section class="aboutus">
+                <span class="our-span">About Our Company</span>
+                <h2 class="ourh2">Safe Logistic & Transport Solutions That Saves Our Valuable Time!</h2>
+                <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
+                <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
+                <button class="mybutton">More About Us</button>
+            </section>
+            <section class="image">
+                <img src="images/about2.png" class="res-image">
+            </section>
+        </div>
+    </article>
+    <!-- start contact us-->
+    <article class="contact-us">
+        <div class="container flex">
+            <div class="ourform">
+                <span class="our-span">Get A Qote For Free</span>
+                <h2 class="ourh2">Request A Free Quote</h2>
+                <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for.</p>
+                <form>
+                    <input type="text" placeholder="Name" class="inputhalf"/>
+                    <input type="email" placeholder="Email"  class="inputhalf"/>
+                    <input type="text" placeholder="Contact Number" class="input1"/>
+                    <select  class="inputhalf">
+                        <option>Freight Type</option>
+                        <option>Catagories One</option>
+                        <option>Catagories Two</option>
+                        <option>Catagories Three</option>
+                        <option>Catagories Four</option>
+                    </select>
+                    <input type="text" placeholder="City of Departure"  class="inputhalf"/>
+                    <input type="text" placeholder="Incoterms"  class="inputhalf"/>
+                    <input type="text" placeholder="Weight"  class="inputhalf"/>
+                    <input type="text" placeholder="Height" class="input3"/>
+                    <input type="text" placeholder="Width" class="input3"/>
+                    <input type="text" placeholder="Length" class="input3"/>
+                    <span>Extra services:</span>
+                    <input type="radio" id="radio-1" value="Freight">
+                    <label for="radio-1">Freight</label>
+                    <input type="radio" id="radio-2" value="Express Delivery" name="service">
+                    <label for="radio-2">Express Delivery</label>
+                    <input type="radio" id="radio-3" value="Insurance" name="service">
+                    <label for="radio-3">Insurance</label>
+                    <input type="radio" id="radio-4" value="Packaging" name="service">
+                    <label for="radio-4">Packaging</label>
+                    <input type="submit" value="Request a Quote" />
+                </form>
             </div>
         </div>
     </article>
