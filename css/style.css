@@ -645,12 +645,12 @@ header .container p {
     margin-left: 15px;
 }
 @media (max-width: 575px) {
+    .contact-us .container {
+        padding: 15px 0 !important;
+    }
     .contact-us .ourform form .input3 ,
     .contact-us .ourform form .inputhalf {
         width: calc(100% - 30px) !important;
-    }
-    .contact-us .ourform form input[type="radio"] {
-        width: 5%;
     }
     
 }
