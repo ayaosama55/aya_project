@@ -7,7 +7,6 @@
 }
 body {
     font-family: 'Dosis', sans-serif;
-    height: 7000px;
 }
 .container {
     margin: 0 auto;
@@ -873,6 +872,15 @@ header .container p {
         width: 40%;
         margin-left: 0;
     }
+}
+/*******************************/
+footer {
+    text-align: center;
+    background-color: #ededed;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
 }
 /* globa media */
 @media (max-width: 575px) {
